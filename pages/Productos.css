@@ -2,7 +2,7 @@ html {font-size: 10px;}
 
 .body-productos {
     
-    background-image: url(/images/robot.jpg) ;
+    background-image: url(../images/robot.jpg) ;
     background-attachment: fixed;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;

@@ -92,7 +92,7 @@ nav{padding: 10px 0px;}
 /*Imagenes*/
 
 .body-novedades{
-    background-image: url(/images/rollosbackground.jpg) ;
+    background-image: url(../images/rollosbackground.jpg) ;
     background-attachment: fixed;
     background-size: 100vw 100vh;
 }
