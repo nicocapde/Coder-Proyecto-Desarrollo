@@ -1,0 +1,195 @@
+html {font-size: 10px;}
+
+.body-novedades {
+font-family:sans-serif;
+
+/*Margin sirve para sacar los margenes al encabezado*/
+margin: 0rem;
+padding-top: 10rem;
+min-height: 100vh;
+}
+
+
+/*Header*/
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+
+nav a { 
+    font-weight: 60rem;
+    padding-right: 1rem;
+}
+
+/*Nav a hover sirve para cambiar el color de los enlaces
+cuando pasamos por arriba con el cursor*/
+
+nav a:hover {
+    color: white;
+}
+
+
+/*El Display Flex sirve para que me muestre la 
+informacion de forma horizontal y no vertical
+(todo lo que esta adentro de header)*/
+
+.header-1{
+position: fixed; top: 0; right: 0; left: 0;
+z-index: 1 ;
+display: flex;
+justify-content: space-between;
+min-height: 4rem;
+background-color: red;
+align-items: center;
+padding: 1rem;
+}
+
+
+/*Esto se puede hacer usando elemento "div"*/
+
+.logo {display: flex;
+align-items: center;}
+
+/*Para hacer que la imagen sea redonda tengo que
+utilizar el border radius y poner los mismos px
+de alto que de ancho*/
+
+.logo img {height: 8rem;
+border-radius: 50%;
+width: 8rem;
+margin-right: 1.5rem;
+}
+
+/*El arroba @media sirve para hacer que se adapte
+a diferentes tipos de pantalla*/
+
+@media (max-width:700px) {
+    header{flex-direction:column ;}}
+
+
+nav{padding: 10px 0px;}
+
+
+/*Texto*/
+
+.texto {
+    width: 100% ;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    color: white;
+    font-size: 15px;
+    
+}
+
+
+/*Imagenes*/
+
+.body-novedades{
+    background-image: url(/images/rollosbackground.jpg) ;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+
+
+
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+    border: solid;
+}
+
+.grid-item:hover{ 
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,500px));
+    grid-auto-rows: 400px ;
+    gap: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*El footer es la parte de abajo donde
+voy a poner las redes, logo, etc*/
+
+@media (max-width:700px) {
+    footer {flex-direction:column ;}}
+
+.pie-pagina{
+    bottom: 0;
+align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    border: solid 0.5rem black;
+display: flex; flex-direction: column;
+flex-wrap: wrap;
+}
+
+
+
+.pie-pagina .footer1 .box figure img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;flex-direction: column;}
+
+
+
+    .titulo-footer {
+        padding: 5rem;
+        display: flex; flex-direction: column;
+        font-size: 1.5rem;
+    }
+    
+    .Red-Social ul li {
+        list-style: none;
+        font-size: 1.5rem;
+        display: flex; flex-direction: column;
+    }
+    
+    .Red-Social a {
+        padding: 1rem;
+    }
+
+    .footer2 small{
+    font-size: 1rem;
+    }
+

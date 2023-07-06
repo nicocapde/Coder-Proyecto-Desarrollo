@@ -1,0 +1,151 @@
+html {font-size: 10px;}
+
+.body-contacto {
+    background-image: url(/images/contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+
+font-family:sans-serif;
+
+/*Margin sirve para sacar los margenes al encabezado*/
+margin: 0rem;
+padding-top: 10rem;
+min-height: 100vh;
+}
+
+
+
+/*Header*/
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+
+nav a { 
+    font-weight: 60rem;
+    padding-right: 1rem;
+}
+
+/*Nav a hover sirve para cambiar el color de los enlaces
+cuando pasamos por arriba con el cursor*/
+
+nav a:hover {
+    color: white;
+}
+
+
+/*El Display Flex sirve para que me muestre la 
+informacion de forma horizontal y no vertical
+(todo lo que esta adentro de header)*/
+
+.header-1{
+position: fixed; top: 0; right: 0; left: 0;
+z-index: 1 ;
+display: flex;
+justify-content: space-between;
+min-height: 4rem;
+background-color: red;
+align-items: center;
+padding: 1rem;}
+
+
+/*Esto se puede hacer usando elemento "div"*/
+
+.logo {display: flex;
+align-items: center;}
+
+/*Para hacer que la imagen sea redonda tengo que
+utilizar el border radius y poner los mismos px
+de alto que de ancho*/
+
+.logo img {height: 8rem;
+border-radius: 50%;
+width: 8rem;
+margin-right: 1.5rem;
+}
+
+/*El arroba @media sirve para hacer que se adapte
+a diferentes tipos de pantalla*/
+
+@media (max-width:700px) {
+    header{flex-direction:column ;}}
+
+
+nav{padding: 10px 0px;}
+
+
+
+form {
+    width: 450px ;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+
+.titulo-formulario {
+    color:black;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+label {
+    color: white;
+    font-size: 15px;
+    }
+
+
+.Eleccion label {
+    color: white;
+}
+
+
+textarea {
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+#boton {
+background-color: gray;
+padding: 10px;
+}
+
+#boton:hover {
+    cursor: pointer;
+    filter: opacity(1);
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+
